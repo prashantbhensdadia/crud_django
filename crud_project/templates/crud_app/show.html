@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <table border="1">
+        {% for e in employees %}
+            <tr>
+                <td>{{e.name}}<td>
+                <td>{{e.email}}<td>
+                <td>{{e.contact}}<td>
+                <td><img src="{{e.photo.url}}"><td>
+            </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
